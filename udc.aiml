@@ -26,7 +26,7 @@
 </category>
 <category>
 <pattern>CINE SUNT</pattern>
-<template>Buna! Esti <get name="name"><star/></get></template>
+<template>Buna! Esti <get name="name" ></get></template>
 </category>
 
 <category>
@@ -114,7 +114,7 @@ Grafica pe calculator, Cloud Computing, Android si Smart Card-uri.</template>
 <category>
 <pattern>* MATERIA * NOTA CEA MAI MARE * FIECARE SEMESTRU</pattern>
 <template>In anul 1, semestrul 1: Introducere in programare - 10, semestrul 2: Programare Orientata Obiect - 9,
-in anul 2, semestrul 1</template>
+in anul 2, semestrul 1, Retele de calculatoare - 10 iar pe semestrul 2: Programare avansata si Tehnologii web - 10</template>
 <!--<set name = "topic">materii</set>-->
 </category>
 
