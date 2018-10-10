@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>SALUT</pattern>
+        <template>
+            <random>
+                <li>Hei! Cu ce-ti pot fi de folos?</li>
+                <li>Salut! Intreaba-ma orice despre situatia ta!</li>
+                <li>Salutare! Sunt MimoBot!</li>
+                <li>Buna! Cu ce te pot ajuta?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>BUNA</pattern>
+        <template>
+            <srai>SALUT</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HEI</pattern>
+        <template>
+            <srai>SALUT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SUNT *</pattern>
+        <template>Buna,
+            <set name="name">
+                <star/>
+            </set>
+            !
+        </template>
+    </category>
+    <category>
+        <pattern>CINE SUNT</pattern>
+        <template>Buna! Esti
+            <get name="name"></get>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* AI FOST INTEGRALIST</pattern>
+        <template>_INTEGRALIST_</template>
+    </category>
+
+    <category>
+        <pattern>IN CE ANI AI RESTANTE</pattern>
+        <template>_RESTANTEANI_</template>
+    </category>
+    <category>
+        <pattern>DIN CE ANI AI * RESTANTE</pattern>
+        <template>
+            <srai>IN CE ANI AI RESTANTE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* ANI AI * RESTANTA</pattern>
+        <template>
+            <srai>IN CE ANI AI RESTANTE</srai>
+        </template>
+    </category>
+     <category>
+        <pattern>IN CE SEMESTRE AI RESTANTE</pattern>
+        <template>_RESTANTESEM_</template>
+    </category>
+    <category>
+        <pattern>* CE SEMESTRE AI * RESTANTE</pattern>
+        <template>
+            <srai>IN CE SEMESTRE AI RESTANTE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* CE SEMESTRU AI * RESTANTE</pattern>
+        <template>
+            <srai>IN CE SEMESTRE AI RESTANTE</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>RANDOMINITNUBAGATIINSEAMAACESTLUCRU</pattern>
+        <template> <set name="name">
+                Inca necunoscut. Cine esti?
+            </set>
+         <set name="matpref">
+                Inca nu stiu ce materii iti plac. Nu ai vrea sa imi spui?
+            </set>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SUNT MATERIILE * PREFERATE</pattern>
+        <template>_MATERIIPREFERATE_</template>
+    </category>
+
+    <category>
+        <pattern>* ESTE MATERIA * PREFERATA</pattern>
+        <template>_MATERIIPREFERATE_</template>
+    </category>
+
+    <category>
+        <pattern>* MATERII * ANUL ACESTA</pattern>
+        <template>_MATERIIANCURENT_</template>
+    </category>
+    <category>
+        <pattern>* MATERIILE * ANUL ACESTA</pattern>
+        <template>
+            <srai>* MATERII * ANUL ACESTA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MATERIILE * ANUL ASTA</pattern>
+        <template>
+            <srai>* MATERII * ANUL ACESTA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MATERII * ANUL ASTA</pattern>
+        <template>
+            <srai>* MATERII * ANUL ACESTA</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CE RESTANTE AI</pattern>
+        <template>_ENUMERARERESTANTE_</template>
+    </category>
+    <category>
+        <pattern>* MATERIILE * RESTANTE</pattern>
+        <template>
+            <srai>CE RESTANTE AI</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* MATERIILE * RESTANTA</pattern>
+        <template>
+            <srai>CE RESTANTE AI</srai>
+        </template>
+    </category>
+    <category>
+<pattern>IN CE ANI AI RESTANTE</pattern>
+<template>Am restanta din semestrul 2 din anul I la FAI</template>
+</category>
+    <category>
+    <pattern> * RESTANTE * </pattern>
+    <template><srai>IN CE ANI AI RESTANTE</srai></template>
+</category>
+<category>
+    <pattern>DIN CE ANI AI * RESTANTE</pattern>
+    <template><srai>IN CE ANI AI RESTANTE</srai></template>
+</category>
+<category>
+    <pattern>* ANI AI * RESTANTA</pattern>
+    <template><srai>IN CE ANI AI RESTANTE</srai></template>
+</category>
+
+    <category>
+<pattern> * AI FOST INTEGRALIST</pattern>
+<template>Am fost integralist pe ambele semestre din anul II si pe primul semestru din anul 1</template>
+</category>
+    <category>
+        <pattern>* RESTANTE * SEMESTRUL * ANUL *</pattern>
+        <template>~M~R~S<star index="3"/>~A
+            <star index="4"/>
+        </template>
+    </category>
+    <category>
+        <pattern>* RESTANTE * ANUL * SEMESTRUL *</pattern>
+        <template>~M~R~S<star index="4"/>~A
+            <star index="3"/>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>* PROFESOR * LICENTA *</pattern>
+        <template>Profesorul meu indrumator de licenta este Conf. dr. Alboaie Lenuta</template>
+        <!--<set name = "topic">licenta</set>-->
+    </category>
+<category>
+	<pattern>CINE E PROFESORUL TAU DE LICENTA</pattern>
+	<template>Profesorul meu indrumator de licenta este Conf. dr. Alboaie Lenuta</template>
+</category>
+
+<category>
+	<pattern>CINE E PROFESORUL TAU INDRUMATOR LA LUCRAREA DE LICENTA</pattern>
+	<template>Profesorul meu indrumator de licenta este Conf. dr. Alboaie Lenuta</template>
+</category>
+    <category>
+        <pattern>* PROFESORUL * LICENTA *</pattern>
+        <template>
+            <srai>PROFESOR * LICENTA</srai>
+        </template>
+        <!--<set name = "topic">licenta</set>-->
+    </category>
+    <category>
+        <pattern>* INDRUMEAZA LA LICENTA</pattern>
+        <template>
+            <srai>PROFESOR * LICENTA</srai>
+        </template>
+        <!--<set name = "topic">licenta</set>-->
+    </category>
+        <category>
+        <pattern>* INDRUMATOR LA LICENTA</pattern>
+        <template>
+            <srai>PROFESOR * LICENTA</srai>
+        </template>
+        <!--<set name = "topic">licenta</set>-->
+    </category>
+
+    <category>
+        <pattern>* MATERIA * NOTA CEA MAI MARE * FIECARE SEMESTRU</pattern>
+        <template>In anul 1, semestrul 1: Introducere in programare - 10, semestrul 2: Programare Orientata Obiect - 9,
+            in anul 2, semestrul 1
+        </template>
+        <!--<set name = "topic">materii</set>-->
+    </category>
+
+    <category>
+        <pattern>CARE ESTE MATERIA CU NOTA CEA MAI * DIN FIECARE *</pattern>
+        <template>_MATERIACUNOTACEAMAI<star/>DINFIECARE<star index="2"/>_</template>
+        <!--<set name = "topic">materii</set>-->
+    </category>
+
+    <category>
+        <pattern>MATERIA MEA PREFERATA ESTE *</pattern>
+        <template>Cool! O sa retin asta! Si mie imi place<set name="matpref">
+                <star/>
+            </set></template>
+    </category>
+
+<category>
+        <pattern>MATERIILE MELE PREFERATE SUNT *</pattern>
+        <template>Cool! O sa retin asta! Si mie imi plac<set name="matpref">
+                <star/>
+            </set></template>
+    </category>
+
+    <category>
+        <pattern>IMI PLACE *</pattern>
+        <template>Cool! O sa retin asta! Si mie imi place<set name="matpref">
+                <star/>
+            </set></template>
+    </category>
+
+    <category>
+        <pattern>CE IMI PLACE</pattern>
+        <template>Mi-ai spus ca iti place:<get name="matpref"></get></template>
+    </category>
+
+
+
+    <category>
+        <pattern>* MATERII IMI PLAC</pattern>
+        <template>Mi-ai spus ca iti place:<get name="matpref"></get></template>
+    </category>
+
+    <category>
+        <pattern>* MATERIA MEA PREFERATA</pattern>
+        <template>Mi-ai spus ca iti place:<get name="matpref"></get></template>
+    </category>
+
+    <category>
+        <pattern>CARE SUNT MATERIILE MELE PREFERATE</pattern>
+        <template>Mi-ai spus ca iti place:<get name="matpref"></get></template>
+    </category>
+
+    <category>
+        <pattern>CARE ESTE MATERIA MEA PREFERATA</pattern>
+        <template>Mi-ai spus ca iti place:<get name="matpref"></get></template>
+    </category>
+
+    <category>
+        <pattern>* MATERII PREFERATE AM</pattern>
+        <template>Mi-ai spus ca iti place:
+            <get name="matpref"></get></template>
+    </category>
+
+    <category>
+        <pattern>CARE ESTE CEA MAI * NOTA A TA DIN FIECARE *</pattern>
+        <template>_CEAMAI<star/>NOTADINFIECARE<star index="2"/>_</template>
+    </category>
+
+    <category>
+        <pattern>CARE A FOST CEA MAI * NOTA A TA DIN FIECARE *</pattern>
+        <template><srai>CARE ESTE CEA MAI <star/> NOTA A TA DIN FIECARE <star index="2"/></srai></template>
+    </category>
+
+    <category>
+        <pattern>CARE ESTE CEA MAI * NOTA</pattern>
+        <template>_CEAMAI<star/>NOTA_</template>
+    </category>
+
+     <category>
+        <pattern>CARE ESTE CEA MAI * NOTA A TA</pattern>
+        <template><srai>CARE ESTE CEA MAI <star/> NOTA</srai></template>
+    </category>
+
+    <category>
+        <pattern>CE MATERII OPTIONALE AI AVUT</pattern>
+        <template>~MATERII OPTIONALE</template>
+        <set name="topic">optionale</set>
+    </category>
+
+        <category>
+            <pattern>CE NOTE AI AVUT</pattern>
+            <template>Notele mele au fost urmatoarele: Matematica: 6, Structuri de date: 8, Logica pentru informatica: 8, Limba engleza 1: 10, Arhitectura calculatoarelor si sisteme de operare: 9, Introducere in programare: 10, Proiectarea algoritmilor: 7, Probabilitati si statistica: 8, Sisteme de operare: 8, Limba engleza 2: 10, Programare orientata-obiect: 9, Fundamente algebrice ale informaticii: 4, Algoritmica grafurilor: 6, Retele de calculatoare: 8, Limbaje formale, automate si compilatoare: 8, Limba engleza 3: 10, Algoritmi genetici: 9, Baze de date: 10, Ingineria programarii: 9, Practica SGBD: 8, Tehnologii WEB: 8, Limba engleza 4: 10, Programare avansata: 9, Modele continue si Matlab: 10</template>
+        </category>
+
+        <category>
+            <pattern>* NOTA * LA *</pattern>
+            <template>_NOTALA_<star index="3"/>
+            </template>
+        </category>
+    <category>
+            <pattern>* NOTA * LA MATERIA *</pattern>
+            <template>_NOTALA_<star index="3"/>
+            </template>
+        </category>
+
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>What was that?</li>
+                <li>I don’t understand</li>
+                <li>Can you say that more clearly?</li>
+                <li>I have no answer for that.🙁</li>
+            </random>
+        </template>
+    </category>
+
+
+</aiml>
