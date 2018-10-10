@@ -98,6 +98,39 @@ Grafica pe calculator, Cloud Computing, Android si Smart Card-uri.</template>
 <template>~M~R~S<star index="4" />~A<star index="3" /></template>
 </category>
 
+<category>
+    <pattern>* SUNT COLEGII *</pattern>
+    <template>Colegii mei sunt:
+    Agafiţei bogdan-paul,
+Almaşanu teodor-ioan,
+Ardeleanu gabriel-angel,
+Betiuc claudiu-ciprian,
+Bompa julia-patricia,
+Chircan dan-cristian,
+Ciobanu ionuţ,
+Ciomaga nicolae-răzvan,
+Cochior-heghi lucian,
+Cojocariu bogdan-gabriel,
+Cojocaru gabriel-codrin,
+Gaidur bogdan-dumitru,
+Gherghelucă eduard,
+Grădinariu gabriel,
+Grosu aurelia,
+Huzum george,
+Ignat cristian,
+Marincean ioan,
+Mihalache marian-ştefan,
+Petcu vlad-andrei,
+Pintilei şerban-mihai,
+Ploae teodor,
+Proca teodor,
+Rugină rareş-teodor,
+Sbîngu răzvan,
+Simion sergiu-sorin,
+Slusariuc dan-dragoş-nicolae,
+Stanciu constantin-sebastian,
+Timofte ştefan</template>
+</category>
 
 <category>
 <pattern>* PROFESOR * LICENTA *</pattern>
@@ -119,8 +152,9 @@ in anul 2, semestrul 1, Retele de calculatoare - 10 iar pe semestrul 2: Programa
 </category>
 
 <category>
-<pattern>CARE ESTE MATERIA CU NOTA CEA MAI MICA DIN FIECARE SEMESTRU</pattern>
-<template>~MATERIE : NOTA WORST S=TOATE </template>
+<pattern>* MATERIA * NOTA CEA MAI MICA * FIECARE SEMESTRU</pattern>
+<template>In anul 1, semestrul 1: Logica in informatica - 6, semestrul 2: Fundalmentele algebrice ale informaticii - 4,
+in anul 2, semestrul 1,Baze de date - 6 iar pe semestrul 2: Sisteme de gestiune a bazelor de date - 5</template>
 <!--<set name = "topic">materii</set>-->
 </category>
 
@@ -145,10 +179,10 @@ in anul 2, semestrul 1, Retele de calculatoare - 10 iar pe semestrul 2: Programa
 <pattern>*</pattern>
 <template>
     <random>
-    <li>What was that?</li>
-    <li>I don’t understand</li>
-    <li>Can you say that more clearly?</li>
-    <li>I have no answer for that.🙁</li>
+    <li>Nu am inteles, poti repeta?</li>
+    <li>Nu am prins-o pe asta.</li>
+    <li>Poti sa fii mai clar, te rog?</li>
+    <li>Nu stiu sa raspund la asta🙁</li>
     </random>
 </template>
 </category>
